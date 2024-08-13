@@ -60,6 +60,18 @@
             white-space: pre-wrap;
         }
     </style>
+    <script>   // Auto-resize the textarea based on content
+      const textarea = document.getElementById('python-code');
+      textarea.addEventListener('input', function () {
+          this.style.height = 'auto';
+          this.style.height = (this.scrollHeight) + 'px';
+      });
+
+      // Initial auto-resize to fit the default content
+      window.addEventListener('load', function () {
+          textarea.style.height = 'auto';
+          textarea.style.height = (textarea.scrollHeight) + 'px';
+      });</script>
 </head>
 <body onload="brython()">
        <div class="container">
@@ -97,19 +109,6 @@
         # Bind the Python function to the button click event
         document['run-button'].bind('click', executePython)
     </script>
-    <script>
-      // Auto-resize the textarea based on content
-      const textarea = document.getElementById('python-code');
-      textarea.addEventListener('input', function () {
-          this.style.height = 'auto';
-          this.style.height = (this.scrollHeight) + 'px';
-      });
-
-      // Initial auto-resize to fit the default content
-      window.addEventListener('load', function () {
-          textarea.style.height = 'auto';
-          textarea.style.height = (textarea.scrollHeight) + 'px';
-      });
-  </script>
+    
 </body>
 </html>
