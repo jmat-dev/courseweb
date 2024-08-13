@@ -3,12 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "courseweb"
+  title: "Python Programming"
   navbar:
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: a.html
+        text: Online Interpreter
 
 format:
   html:

@@ -1,14 +1,133 @@
 ---
-title: "courseweb"
-jupyter: python3
+title: "Introduction to Python Programming"
+author: "Your Name"
+format: html
 ---
 
-This is a Quarto website.
+# Introduction to Python
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+In this tutorial, we will cover the basics of Python programming, including data types, keywords, variables, input/output statements, operators, arithmetic expressions, operator precedence, and evaluation of expressions.
+
+## Data Types
+
+Python supports several built-in data types. Let's explore some of the most common ones:
+
+- **Integer (`int`)**: Represents whole numbers.
+- **Floating Point (`float`)**: Represents decimal numbers.
+- **String (`str`)**: Represents sequences of characters.
+- **Boolean (`bool`)**: Represents `True` or `False`.
+
+### Example
 
 ```{python}
-a=5
-b=2
-print(a+b)
+# Demonstrating different data types
+
+# Integer
+a = 10
+print("Integer:", a, type(a))
+
+# Float
+b = 3.14
+print("Float:", b, type(b))
+
+
+# String
+c = "Hello, Python!"
+print("String:", c, type(c))
+
+# Boolean
+d = True
+print("Boolean:", d, type(d))
+```
+## Variables
+Variables are used to store data in memory. A variable is created when you assign a value to it using the = operator.
+```{python}
+# Variable assignment
+
+x = 5
+y = 2.5
+z = x + y
+
+print("x =", x)
+print("y =", y)
+print("z =", z)
+
+
+```
+## Input and Output Statements
+Python provides the input() function to take user input and the print() function to display output.
+```{python}
+# Input and Output
+name="justin"
+age=32
+#name = input("Enter your name: ")
+#age = int(input("Enter your age: "))
+
+print(f"Hello, {name}! You are {age} years old.")
+
+
+```
+## Operators
+Operators are special symbols used to perform operations on variables and values. Python supports several types of operators:
+
+Arithmetic Operators: +, -, *, /, //, %, **
+Comparison Operators: ==, !=, >, <, >=, <=
+Logical Operators: and, or, not
+Assignment Operators: =, +=, -=, *=, /=, //=, %=, **=
+```{python}
+# Arithmetic Operations
+
+a = 15
+b = 4
+
+addition = a + b
+subtraction = a - b
+multiplication = a * b
+division = a / b
+floor_division = a // b
+modulus = a % b
+exponentiation = a ** b
+
+print("Addition:", addition)
+print("Subtraction:", subtraction)
+print("Multiplication:", multiplication)
+print("Division:", division)
+print("Floor Division:", floor_division)
+print("Modulus:", modulus)
+print("Exponentiation:", exponentiation)
+
+```
+## Arithmetic Expressions
+An arithmetic expression is a combination of numbers, operators, and variables that evaluates to a value.
+
+```{python}
+# Evaluating arithmetic expressions
+
+expression = (5 + 2) * (10 - 3) / 2 ** 2
+print("Expression Result:", expression)
+```
+## Operator Precedence
+Operator precedence determines the order in which operations are performed in an expression. The following list shows the precedence from highest to lowest:
+
+** (Exponentiation)
+*, /, //, % (Multiplication, Division, Floor Division, Modulus)
++, - (Addition, Subtraction)
+```{python}
+# Operator precedence
+
+result = 5 + 3 * 2 ** 2 - 1
+print("Operator Precedence Result:", result)
+
+```
+
+
+## Evaluation of Expressions
+Python evaluates expressions from left to right, following the precedence rules.
+
+```{python}
+# Evaluation of expressions
+
+value = (10 + 5) * 2 - 3 / 3
+print("Evaluation Result:", value)
+
 ```

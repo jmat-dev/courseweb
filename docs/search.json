@@ -2,9 +2,9 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "courseweb",
+    "title": "Introduction to Python Programming",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\na=5\nb=2\nprint(a+b)\n\n7"
+    "text": "In this tutorial, we will cover the basics of Python programming, including data types, keywords, variables, input/output statements, operators, arithmetic expressions, operator precedence, and evaluation of expressions.\n\n\nPython supports several built-in data types. Let’s explore some of the most common ones:\n\nInteger (int): Represents whole numbers.\nFloating Point (float): Represents decimal numbers.\nString (str): Represents sequences of characters.\nBoolean (bool): Represents True or False.\n\n\n\n\n# Demonstrating different data types\n\n# Integer\na = 10\nprint(\"Integer:\", a, type(a))\n\n# Float\nb = 3.14\nprint(\"Float:\", b, type(b))\n\n\n# String\nc = \"Hello, Python!\"\nprint(\"String:\", c, type(c))\n\n# Boolean\nd = True\nprint(\"Boolean:\", d, type(d))\n\nInteger: 10 &lt;class 'int'&gt;\nFloat: 3.14 &lt;class 'float'&gt;\nString: Hello, Python! &lt;class 'str'&gt;\nBoolean: True &lt;class 'bool'&gt;\n\n\n\n\n\n\nVariables are used to store data in memory. A variable is created when you assign a value to it using the = operator.\n\n# Variable assignment\n\nx = 5\ny = 2.5\nz = x + y\n\nprint(\"x =\", x)\nprint(\"y =\", y)\nprint(\"z =\", z)\n\nx = 5\ny = 2.5\nz = 7.5\n\n\n\n\n\nPython provides the input() function to take user input and the print() function to display output.\n\n# Input and Output\nname=\"justin\"\nage=32\n#name = input(\"Enter your name: \")\n#age = int(input(\"Enter your age: \"))\n\nprint(f\"Hello, {name}! You are {age} years old.\")\n\nHello, justin! You are 32 years old.\n\n\n\n\n\nOperators are special symbols used to perform operations on variables and values. Python supports several types of operators:\nArithmetic Operators: +, -, *, /, //, %, ** Comparison Operators: ==, !=, &gt;, &lt;, &gt;=, &lt;= Logical Operators: and, or, not Assignment Operators: =, +=, -=, *=, /=, //=, %=, **=\n\n# Arithmetic Operations\n\na = 15\nb = 4\n\naddition = a + b\nsubtraction = a - b\nmultiplication = a * b\ndivision = a / b\nfloor_division = a // b\nmodulus = a % b\nexponentiation = a ** b\n\nprint(\"Addition:\", addition)\nprint(\"Subtraction:\", subtraction)\nprint(\"Multiplication:\", multiplication)\nprint(\"Division:\", division)\nprint(\"Floor Division:\", floor_division)\nprint(\"Modulus:\", modulus)\nprint(\"Exponentiation:\", exponentiation)\n\nAddition: 19\nSubtraction: 11\nMultiplication: 60\nDivision: 3.75\nFloor Division: 3\nModulus: 3\nExponentiation: 50625\n\n\n\n\n\nAn arithmetic expression is a combination of numbers, operators, and variables that evaluates to a value.\n\n# Evaluating arithmetic expressions\n\nexpression = (5 + 2) * (10 - 3) / 2 ** 2\nprint(\"Expression Result:\", expression)\n\nExpression Result: 12.25\n\n\n\n\n\nOperator precedence determines the order in which operations are performed in an expression. The following list shows the precedence from highest to lowest:\n** (Exponentiation) *, /, //, % (Multiplication, Division, Floor Division, Modulus) +, - (Addition, Subtraction)\n\n# Operator precedence\n\nresult = 5 + 3 * 2 ** 2 - 1\nprint(\"Operator Precedence Result:\", result)\n\nOperator Precedence Result: 16\n\n\n\n\n\nPython evaluates expressions from left to right, following the precedence rules.\n\n# Evaluation of expressions\n\nvalue = (10 + 5) * 2 - 3 / 3\nprint(\"Evaluation Result:\", value)\n\nEvaluation Result: 29.0"
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,54 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "index.html#data-types",
+    "href": "index.html#data-types",
+    "title": "Introduction to Python Programming",
+    "section": "",
+    "text": "Python supports several built-in data types. Let’s explore some of the most common ones:\n\nInteger (int): Represents whole numbers.\nFloating Point (float): Represents decimal numbers.\nString (str): Represents sequences of characters.\nBoolean (bool): Represents True or False.\n\n\n\n\n# Demonstrating different data types\n\n# Integer\na = 10\nprint(\"Integer:\", a, type(a))\n\n# Float\nb = 3.14\nprint(\"Float:\", b, type(b))\n\n\n# String\nc = \"Hello, Python!\"\nprint(\"String:\", c, type(c))\n\n# Boolean\nd = True\nprint(\"Boolean:\", d, type(d))\n\nInteger: 10 &lt;class 'int'&gt;\nFloat: 3.14 &lt;class 'float'&gt;\nString: Hello, Python! &lt;class 'str'&gt;\nBoolean: True &lt;class 'bool'&gt;"
+  },
+  {
+    "objectID": "index.html#variables",
+    "href": "index.html#variables",
+    "title": "Introduction to Python Programming",
+    "section": "",
+    "text": "Variables are used to store data in memory. A variable is created when you assign a value to it using the = operator.\n\n# Variable assignment\n\nx = 5\ny = 2.5\nz = x + y\n\nprint(\"x =\", x)\nprint(\"y =\", y)\nprint(\"z =\", z)\n\nx = 5\ny = 2.5\nz = 7.5"
+  },
+  {
+    "objectID": "index.html#input-and-output-statements",
+    "href": "index.html#input-and-output-statements",
+    "title": "Introduction to Python Programming",
+    "section": "",
+    "text": "Python provides the input() function to take user input and the print() function to display output.\n\n# Input and Output\nname=\"justin\"\nage=32\n#name = input(\"Enter your name: \")\n#age = int(input(\"Enter your age: \"))\n\nprint(f\"Hello, {name}! You are {age} years old.\")\n\nHello, justin! You are 32 years old."
+  },
+  {
+    "objectID": "index.html#operators",
+    "href": "index.html#operators",
+    "title": "Introduction to Python Programming",
+    "section": "",
+    "text": "Operators are special symbols used to perform operations on variables and values. Python supports several types of operators:\nArithmetic Operators: +, -, *, /, //, %, ** Comparison Operators: ==, !=, &gt;, &lt;, &gt;=, &lt;= Logical Operators: and, or, not Assignment Operators: =, +=, -=, *=, /=, //=, %=, **=\n\n# Arithmetic Operations\n\na = 15\nb = 4\n\naddition = a + b\nsubtraction = a - b\nmultiplication = a * b\ndivision = a / b\nfloor_division = a // b\nmodulus = a % b\nexponentiation = a ** b\n\nprint(\"Addition:\", addition)\nprint(\"Subtraction:\", subtraction)\nprint(\"Multiplication:\", multiplication)\nprint(\"Division:\", division)\nprint(\"Floor Division:\", floor_division)\nprint(\"Modulus:\", modulus)\nprint(\"Exponentiation:\", exponentiation)\n\nAddition: 19\nSubtraction: 11\nMultiplication: 60\nDivision: 3.75\nFloor Division: 3\nModulus: 3\nExponentiation: 50625"
+  },
+  {
+    "objectID": "index.html#arithmetic-expressions",
+    "href": "index.html#arithmetic-expressions",
+    "title": "Introduction to Python Programming",
+    "section": "",
+    "text": "An arithmetic expression is a combination of numbers, operators, and variables that evaluates to a value.\n\n# Evaluating arithmetic expressions\n\nexpression = (5 + 2) * (10 - 3) / 2 ** 2\nprint(\"Expression Result:\", expression)\n\nExpression Result: 12.25"
+  },
+  {
+    "objectID": "index.html#operator-precedence",
+    "href": "index.html#operator-precedence",
+    "title": "Introduction to Python Programming",
+    "section": "",
+    "text": "Operator precedence determines the order in which operations are performed in an expression. The following list shows the precedence from highest to lowest:\n** (Exponentiation) *, /, //, % (Multiplication, Division, Floor Division, Modulus) +, - (Addition, Subtraction)\n\n# Operator precedence\n\nresult = 5 + 3 * 2 ** 2 - 1\nprint(\"Operator Precedence Result:\", result)\n\nOperator Precedence Result: 16"
+  },
+  {
+    "objectID": "index.html#evaluation-of-expressions",
+    "href": "index.html#evaluation-of-expressions",
+    "title": "Introduction to Python Programming",
+    "section": "",
+    "text": "Python evaluates expressions from left to right, following the precedence rules.\n\n# Evaluation of expressions\n\nvalue = (10 + 5) * 2 - 3 / 3\nprint(\"Evaluation Result:\", value)\n\nEvaluation Result: 29.0"
   }
 ]

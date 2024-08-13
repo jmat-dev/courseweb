@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Interpreter</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
+</head>
+<body onload="brython()">
+    <h1>Python Interpreter</h1>
+    
+    <textarea id="python-code" rows="10" cols="50">
+print("Hello, World!")
+    </textarea>
+    
+    <button id="run-button">Run</button>
+    
+    <h2>Output:</h2>
+    <pre id="output"></pre>
+
+    <script type="text/python">
+        from browser import document
+
+        def custom_print(*args, **kwargs):
+            output_element = document['output']
+            output_element.text += ' '.join([str(arg) for arg in args]) ;
+
+        def executePython(event):
+            code = document['python-code'].value
+            document['output'].text = ""  # Clear previous output
+            try:
+                exec(code, {'print': custom_print})  # Override the print function
+            except Exception as e:
+                document['output'].text = str(e)
+
+        # Bind the Python function to the button click event
+        document['run-button'].bind('click', executePython)
+    </script>
+</body>
+</html>
