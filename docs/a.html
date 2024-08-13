@@ -1,91 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Python Interpreter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/brython@3.9.5/brython.min.js"></script>
     <style>
         body {
-          display: flex;
+            display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f8f9fa;
         }
+
         .container {
-            text-align: center; 
-            width: 100%;
             max-width: 600px;
-            margin: 0 auto;
-        }
-        textarea {
             width: 100%;
-            min-height: 150px;
-            padding: 10px;
-            border-radius: 7px;
-            border: 1px solid #ccc;
-            font-size: 14px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        textarea {
             resize: none;
-            box-sizing: border-box;
             overflow: hidden;
         }
-        button {
-            margin-top: 15px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-        }
-        a {
-            display: inline-block;
-            margin-top: 15px;
-            color: #007BFF;
-            text-decoration: none;
-            font-size: 16px;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
+
         pre {
-            margin-top: 20px;
+            background-color: #f8f9fa;
             padding: 15px;
-            background-color: #f0f0f0;
             border-radius: 5px;
-            text-align: left;
-            white-space: pre-wrap;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
         }
     </style>
 </head>
+
 <body onload="brython()">
-       <div class="container">
-      <h1>Python Interpreter</h1>
-      <div class="w-96">
-          <div class="relative w-full min-w-[400px]">
-              <textarea id="python-code"
-                  class="peer"
-                  placeholder="print(&quot;Hello, World!&quot;)"></textarea>
-          </div>
-      </div>
-      <button id="run-button">Run</button>
-      <a href="">Home</a>
-      <h2>Output:</h2>
-      <pre id="output"></pre>
-  </div>
-    
-   
-    
-   
+    <div class="container">
+        <h1>Python Interpreter</h1>
+
+        <div class="mb-3">
+            <textarea id="python-code" class="form-control" rows="10">print("Hello, World!")</textarea>
+        </div>
+
+        <button id="run-button" class="btn btn-primary w-100">Run</button>
+
+        <h2>Output:</h2>
+        <pre id="output" class="mt-3"></pre>
+    </div>
+
     <script type="text/python">
         from browser import document
 
         def custom_print(*args, **kwargs):
             output_element = document['output']
-            output_element.text += ' '.join([str(arg) for arg in args]) ;
+            output_element.text += ' '.join([str(arg) for arg in args]) + '\\n'
 
         def executePython(event):
             code = document['python-code'].value
@@ -98,19 +78,6 @@
         # Bind the Python function to the button click event
         document['run-button'].bind('click', executePython)
     </script>
-    <script>
-      // Auto-resize the textarea based on content
-      const textarea = document.getElementById('python-code');
-      textarea.addEventListener('input', function () {
-          this.style.height = 'auto';
-          this.style.height = (this.scrollHeight) + 'px';
-      });
-
-      // Initial auto-resize to fit the default content
-      window.addEventListener('load', function () {
-          textarea.style.height = 'auto';
-          textarea.style.height = (textarea.scrollHeight) + 'px';
-      });
-  </script>
 </body>
+
 </html>
