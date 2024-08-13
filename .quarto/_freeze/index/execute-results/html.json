@@ -1,0 +1,12 @@
+{
+  "hash": "f38d4b7b8250d0429008e3b16541844c",
+  "result": {
+    "engine": "jupyter",
+    "markdown": "---\ntitle: \"courseweb\"\njupyter: python3\n---\n\n\n\n\nThis is a Quarto website.\n\nTo learn more about Quarto websites visit <https://quarto.org/docs/websites>.\n\n::: {#10f6804a .cell execution_count=1}\n``` {.python .cell-code}\na=5\nb=2\nprint(a+b)\n```\n\n::: {.cell-output .cell-output-stdout}\n```\n7\n```\n:::\n:::\n\n\n",
+    "supporting": [
+      "index_files"
+    ],
+    "filters": [],
+    "includes": {}
+  }
+}

@@ -1,0 +1,14 @@
+---
+title: "courseweb"
+jupyter: python3
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{python}
+a=5
+b=2
+print(a+b)
+```
