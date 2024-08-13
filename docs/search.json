@@ -61,5 +61,33 @@
     "title": "Introduction to Python Programming",
     "section": "",
     "text": "Python evaluates expressions from left to right, following the precedence rules.\n\n# Evaluation of expressions\n\nvalue = (10 + 5) * 2 - 3 / 3\nprint(\"Evaluation Result:\", value)\n\nEvaluation Result: 29.0"
+  },
+  {
+    "objectID": "index.html#conditional-statements-in-python",
+    "href": "index.html#conditional-statements-in-python",
+    "title": "Introduction to Python Programming",
+    "section": "",
+    "text": "Conditional statements in Python allow the execution of specific code blocks based on whether a condition is true or false. Let’s explore various types of conditional statements."
+  },
+  {
+    "objectID": "index.html#the-if-statement",
+    "href": "index.html#the-if-statement",
+    "title": "Introduction to Python Programming",
+    "section": "The if Statement",
+    "text": "The if Statement\nThe if statement tests a specific condition. If the condition is true, the code block under the if statement is executed.\nExample\n\n# Example of an if statement\n\nnumber = 10\n\nif number &gt; 0:\n    print(f\"{number} is a positive number.\")\n\n10 is a positive number.\n\n\nExplanation The above program checks if number is greater than 0. Since 10 is greater than 0, the condition is true, and the message is printed."
+  },
+  {
+    "objectID": "index.html#the-if-else-statement",
+    "href": "index.html#the-if-else-statement",
+    "title": "Introduction to Python Programming",
+    "section": "The if-else Statement",
+    "text": "The if-else Statement\nThe if-else statement allows you to execute one block of code if the condition is true and another block if it is false.\n\n# Example of an if-else statement\n\nnumber = -5\n\nif number &gt;= 0:\n    print(f\"{number} is a non-negative number.\")\nelse:\n    print(f\"{number} is a negative number.\")\n\n-5 is a negative number.\n\n\nExplanation In this example, the program checks if number is greater than or equal to 0. If true, it prints that the number is non-negative. Otherwise, it prints that the number is negative. Example 2\n\nage = 20\n\nif age &gt;= 18:\n    print(\"You are eligible to vote.\")\nelse:\n    print(\"You are not eligible to vote.\")\n\nYou are eligible to vote.\n\n\nExplanation This program checks if a person’s age is greater than or equal to 18. If true, it prints that the person is eligible to vote. Otherwise, it states they are not eligible to vote. ## The elif Statement The elif statement, short for “else if,” allows you to check multiple conditions sequentially. If one of the conditions is true, the corresponding block of code is executed.\n\n# Example of an elif statement\n\nnumber = 0\n\nif number &gt; 0:\n    print(f\"{number} is a positive number.\")\nelif number == 0:\n    print(f\"{number} is zero.\")\nelse:\n    print(f\"{number} is a negative number.\")\n\n0 is zero.\n\n\nExplanation Here, the program checks three conditions: whether the number is positive, zero, or negative. The elif statement handles the case where number is exactly 0.\n\n# Another example of an elif statement\n\nmarks = 85\n\nif marks &gt;= 90:\n    grade = 'A'\nelif marks &gt;= 80:\n    grade = 'B'\nelif marks &gt;= 70:\n    grade = 'C'\nelse:\n    grade = 'F'\n\nprint(f\"Your grade is {grade}.\")\n\nYour grade is B.\n\n\nExplanation This program assigns a grade based on the marks obtained. Depending on the range in which the marks fall, the corresponding grade is assigned and printed."
+  },
+  {
+    "objectID": "index.html#nested-if-else-statements",
+    "href": "index.html#nested-if-else-statements",
+    "title": "Introduction to Python Programming",
+    "section": "Nested if-else Statements",
+    "text": "Nested if-else Statements\nNested if-else statements allow you to include an if-else statement inside another if-else block for handling more complex conditions.\n\n# Example of nested if-else statements\n\nnumber = 25\n\nif number &gt; 0:\n    if number % 2 == 0:\n        print(f\"{number} is a positive even number.\")\n    else:\n        print(f\"{number} is a positive odd number.\")\n\n25 is a positive odd number.\n\n\nExplanation This example checks if a number is positive and then further checks whether it is even or odd using nested if-else statements.\n\n# Another example of nested if-else statements\n\nscore = 92\n\nif score &gt;= 50:\n    if score &gt;= 90:\n        print(\"Excellent!\")\n    else:\n        print(\"Good job!\")\nelse:\n    print(\"Better luck next time.\")\n\nExcellent!\n\n\nExplanation This program checks if a score is at least 50. If true, it further checks if the score is 90 or above, printing “Excellent!” if it is, and “Good job!” if it isn’t. If the score is below 50, it prints “Better luck next time.”"
   }
 ]

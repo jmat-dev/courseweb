@@ -131,7 +131,7 @@ value = (10 + 5) * 2 - 3 / 3
 print("Evaluation Result:", value)
 
 ```
-## Conditional Statements in Python
+# Conditional Statements in Python
 
 Conditional statements in Python allow the execution of specific code blocks based on whether a condition is true or false. Let's explore various types of conditional statements.
 
@@ -139,7 +139,7 @@ Conditional statements in Python allow the execution of specific code blocks bas
 
 The `if` statement tests a specific condition. If the condition is true, the code block under the `if` statement is executed.
 
-### Example
+Example
 
 ```{python}
 # Example of an if statement
@@ -152,7 +152,7 @@ if number > 0:
 Explanation
 The above program checks if number is greater than 0. Since 10 is greater than 0, the condition is true, and the message is printed.
 
-##The if-else Statement
+## The if-else Statement
 The if-else statement allows you to execute one block of code if the condition is true and another block if it is false.
 ```{python}
 # Example of an if-else statement
@@ -179,7 +179,7 @@ else:
 ```
 Explanation
 This program checks if a person’s age is greater than or equal to 18. If true, it prints that the person is eligible to vote. Otherwise, it states they are not eligible to vote.
-##The elif Statement
+## The elif Statement
 The elif statement, short for "else if," allows you to check multiple conditions sequentially. If one of the conditions is true, the corresponding block of code is executed.
 ```{python}
 # Example of an elif statement
@@ -217,7 +217,7 @@ print(f"Your grade is {grade}.")
 Explanation
 This program assigns a grade based on the marks obtained. Depending on the range in which the marks fall, the corresponding grade is assigned and printed.
 
-##Nested if-else Statements
+## Nested if-else Statements
 Nested if-else statements allow you to include an if-else statement inside another if-else block for handling more complex conditions.
 ```{python}
 # Example of nested if-else statements
