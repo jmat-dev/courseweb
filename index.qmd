@@ -370,3 +370,111 @@ for i in range(n):
     print(a, end=" ")
     a, b = b, a + b
 ```
+
+#Functions
+
+In this module, we will explore the concept of functions in Python. You will learn how to define and call functions, pass parameters, return values, and utilize various types of functions, including lambda functions. Additionally, we will cover type conversion, coercion, and mathematical functions.
+
+# Understanding Functions
+
+Functions are reusable blocks of code that perform a specific task. They enhance modularity and allow for code reuse, making programs easier to manage and maintain.
+
+## Way of Writing Functions
+
+In Python, functions are defined using the `def` keyword, followed by the function name and parentheses `()` which may include parameters. The function body is indented and contains the code that executes when the function is called.
+
+Example:
+```
+def function_name(parameters):
+    # Function body
+    statement(s)
+```
+
+## How to Call Functions
+
+Once a function is defined, it can be called by using its name followed by parentheses. If the function takes parameters, you need to provide arguments in the parentheses.
+
+Example:
+```
+function_name(arguments)
+```
+
+## Passing Parameters and Return Values
+
+Functions can accept parameters (or arguments) that are passed to them when they are called. They can also return a value using the `return` statement.
+
+Example:
+```
+def add(a, b):
+    return a + b
+
+result = add(5, 3)
+```
+
+In this example, `5` and `3` are passed to the `add` function as arguments, and the function returns their sum.
+
+## Sample Programs Using Functions
+
+Here are a few sample programs that demonstrate the use of functions in Python:
+
+1. **Calculate Factorial of a Number**
+```{python}
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+print(factorial(5))  # Output: 120
+```
+
+2. **Check if a Number is Prime**
+```{python}
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+print(is_prime(11))  # Output: True
+```
+
+## Type Conversion and Coercion
+
+Python provides several built-in functions for type conversion, such as `int()`, `float()`, and `str()`. Type coercion refers to the implicit conversion of data types during operations.
+
+Example:
+```{python}
+x = "5"
+y = 10
+z = int(x) + y  # Explicit type conversion
+print(z)  # Output: 15
+```
+
+## Lambda Functions
+
+Lambda functions are small anonymous functions defined using the `lambda` keyword. They can have any number of arguments but only one expression.
+
+Example:
+```[python}
+square = lambda x: x ** 2
+print(square(4))  # Output: 16
+```
+
+## Mathematical Functions
+
+Python provides a module named `math` that includes various mathematical functions like `sqrt()`, `sin()`, `cos()`, and more.
+
+Example:
+```{python}
+import math
+
+print(math.sqrt(16))  # Output: 4.0
+print(math.sin(math.pi/2))  # Output: 1.0
+```
+
+## Conclusion
+
+Understanding and implementing functions in Python is a crucial aspect of programming. This module covered various ways to define, call, and utilize functions, as well as special function types like lambda functions and mathematical functions.
