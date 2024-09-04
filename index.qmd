@@ -656,3 +656,44 @@ grades = {'Alice': 85, 'Bob': 92, 'Charlie': 78}
 average = sum(grades.values()) / len(grades)
 print(average)
 ```
+# Mini Projects for First-Year Engineering Students
+
+## 1. Simple Calculator
+**Description:** Create a basic calculator that performs addition, subtraction, multiplication, and division. Add error handling for division by zero and invalid input.  
+**Concepts Covered:** Functions, conditionals, basic arithmetic operations.
+
+## 2. To-Do List Application
+**Description:** Develop a command-line to-do list application where users can add, remove, and view tasks. Tasks should be stored in a text file to persist between sessions.  
+**Concepts Covered:** File handling, lists, basic CRUD operations.
+
+## 3. Number Guessing Game
+**Description:** Build a game where the computer randomly selects a number within a given range, and the user has to guess it. Provide feedback on whether the guess is too high or too low, and count the number of attempts.  
+**Concepts Covered:** Random number generation, loops, conditionals.
+
+## 4. Simple Bank Management System
+**Description:** Implement a basic bank management system where users can create an account, check balance, deposit money, and withdraw money. Use a dictionary to store user data.  
+**Concepts Covered:** Dictionaries, functions, basic data management.
+
+## 5. Temperature Converter
+**Description:** Create a program that converts temperatures between Celsius, Fahrenheit, and Kelvin. Allow users to input the temperature and select the conversion type.  
+**Concepts Covered:** Functions, user input, basic arithmetic.
+
+## 6. Quiz Application
+**Description:** Design a quiz application that presents multiple-choice questions to the user. Keep track of the score and display it at the end.  
+**Concepts Covered:** Lists, dictionaries, loops, conditionals.
+
+## 7. Simple Contact Book
+**Description:** Build a contact book where users can add, view, update, and delete contact information. Store contacts in a dictionary or text file.  
+**Concepts Covered:** File handling or dictionary operations, CRUD operations.
+
+## 8. Tic-Tac-Toe Game
+**Description:** Create a simple text-based Tic-Tac-Toe game where two players can play against each other. Implement a function to check for win conditions.  
+**Concepts Covered:** Lists, functions, game logic.
+
+## 9. Password Generator
+**Description:** Develop a program that generates random passwords with a specified length and complexity. Allow users to choose the types of characters (e.g., letters, numbers, symbols).  
+**Concepts Covered:** Random module, strings, functions.
+
+## 10. Student Grade Management System
+**Description:** Create a system to manage student grades. Users can input grades, view grades for individual students, and calculate the average grade for each student.  
+**Concepts Covered:** Lists, dictionaries, basic statistics.

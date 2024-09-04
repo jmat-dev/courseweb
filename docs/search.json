@@ -133,20 +133,6 @@
     "text": "Mathematical Functions\nPython provides a module named math that includes various mathematical functions like sqrt(), sin(), cos(), and more.\nExample:\n\nimport math\n\nprint(math.sqrt(16))  # Output: 4.0\nprint(math.sin(math.pi/2))  # Output: 1.0\n\n4.0\n1.0"
   },
   {
-    "objectID": "index.html#lists",
-    "href": "index.html#lists",
-    "title": "Introduction to Python Programming",
-    "section": "Lists",
-    "text": "Lists\nA list is an ordered collection of items which can be of any type. Lists are mutable, meaning you can change their content after creation.\n\nKey Features\n\nSyntax: []\nMutable: You can modify the list after it is created.\nOperations: append(), remove(), extend(), pop(), insert(), and more.\n\n\n\nExample\nmy_list = [1, 2, 3, 'a', 'b']\nmy_list.append(4)\nmy_list.remove('a')\n\n\nTuples\nA tuple is similar to a list but is immutable. Once a tuple is created, its content cannot be changed.\nKey Features Syntax: () Immutable: You cannot modify a tuple after it is created. Operations: Access, slicing, and concatenation.\nmy_tuple = (1, 2, 3, 'a', 'b')\n# my_tuple.append(4)  # This will raise an error\n\n\nDictionaries\nA dictionary is an unordered collection of key-value pairs. Each key must be unique.\nKey Features Syntax: {} Mutable: You can change the value associated with a key. Operations: get(), items(), keys(), values(), and more.\nmy_dict = {'name': 'John', 'age': 30}\nmy_dict['age'] = 31\n\n\nOperations and Functions Associated\nList Operations Adding Elements: append(), extend(), insert() Removing Elements: remove(), pop() Accessing Elements: Indexing, slicing Sorting: sort(), sorted() Tuple Operations Accessing Elements: Indexing, slicing Concatenation: + Repetition: * Dictionary Operations Adding/Updating Elements: dict[key] = value Removing Elements: del dict[key], pop() Accessing Elements: dict.get(key) Iteration: dict.items(), dict.keys(), dict.values() ### Mutable and Immutable Data Structures Mutable Data Structures Lists: Can be changed after creation. Dictionaries: Can have their content modified. Immutable Data Structures Tuples: Cannot be changed after creation. Areas of Usage Lists Use lists when you need an ordered collection of items that can change. Example: Storing a sequence of user inputs or results from computations. Tuples Use tuples when you need an ordered collection of items that should not be changed. Example: Returning multiple values from a function. Dictionaries Use dictionaries when you need a collection of key-value pairs for fast lookups. Example: Storing user information where each user ID is a key. ## Solving Problems Using Lists, Tuples, and Dictionaries ### Example Problem 1: List Manipulation\n# Given a list of numbers, find the sum of even numbers\nnumbers = [1, 2, 3, 4, 5, 6]\neven_sum = sum(num for num in numbers if num % 2 == 0)\nprint(even_sum)\n\n\nExample Problem 2: Tuple Usage\n# Given a tuple of coordinates, compute the distance from origin\ncoordinates = (3, 4)\ndistance = (coordinates[0]**2 + coordinates[1]**2)**0.5\nprint(distance)\n\n\nExample Problem 3: Dictionary Operations\n# Given a dictionary of student grades, compute the average grade\ngrades = {'Alice': 85, 'Bob': 92, 'Charlie': 78}\naverage = sum(grades.values()) / len(grades)\nprint(average)"
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "index.html#string-handling-functions",
     "href": "index.html#string-handling-functions",
     "title": "Introduction to Python Programming",
@@ -159,5 +145,89 @@
     "title": "Introduction to Python Programming",
     "section": "Writing Simple Programs Using String Handling Functions",
     "text": "Writing Simple Programs Using String Handling Functions\nHere are a few simple programs that demonstrate the use of string handling functions:\n\nCheck if a String is a Palindrome\n\ndef is_palindrome(s):\n    s = s.lower().replace(\" \", \"\")\n    return s == s[::-1]\n\nprint(is_palindrome(\"Madam\"))  # Output: True\nprint(is_palindrome(\"Hello\"))  # Output: False\n\nTrue\nFalse\n\n\n###Count the Number of Vowels in a String\n\ndef count_vowels(s):\n    vowels = \"aeiou\"\n    count = 0\n    for char in s.lower():\n        if char in vowels:\n            count += 1\n    return count\n\nprint(count_vowels(\"Hello World\"))  # Output: 3\n\n3\n\n\n###Reverse the Words in a Sentence\n\ndef reverse_words(sentence):\n    words = sentence.split()\n    reversed_sentence = \" \".join(reversed(words))\n    return reversed_sentence\n\nprint(reverse_words(\"Hello World\"))  # Output: \"World Hello\"\n\nWorld Hello"
+  },
+  {
+    "objectID": "index.html#lists",
+    "href": "index.html#lists",
+    "title": "Introduction to Python Programming",
+    "section": "Lists",
+    "text": "Lists\nA list is an ordered collection of items which can be of any type. Lists are mutable, meaning you can change their content after creation.\n\nKey Features\n\nSyntax: []\nMutable: You can modify the list after it is created.\nOperations: append(), remove(), extend(), pop(), insert(), and more.\n\n\n\nExample\nmy_list = [1, 2, 3, 'a', 'b']\nmy_list.append(4)\nmy_list.remove('a')\n\n\nTuples\nA tuple is similar to a list but is immutable. Once a tuple is created, its content cannot be changed.\nKey Features Syntax: () Immutable: You cannot modify a tuple after it is created. Operations: Access, slicing, and concatenation.\nmy_tuple = (1, 2, 3, 'a', 'b')\n# my_tuple.append(4)  # This will raise an error\n\n\nDictionaries\nA dictionary is an unordered collection of key-value pairs. Each key must be unique.\nKey Features Syntax: {} Mutable: You can change the value associated with a key. Operations: get(), items(), keys(), values(), and more.\nmy_dict = {'name': 'John', 'age': 30}\nmy_dict['age'] = 31\n\n\nOperations and Functions Associated\nList Operations Adding Elements: append(), extend(), insert() Removing Elements: remove(), pop() Accessing Elements: Indexing, slicing Sorting: sort(), sorted() Tuple Operations Accessing Elements: Indexing, slicing Concatenation: + Repetition: * Dictionary Operations Adding/Updating Elements: dict[key] = value Removing Elements: del dict[key], pop() Accessing Elements: dict.get(key) Iteration: dict.items(), dict.keys(), dict.values() ### Mutable and Immutable Data Structures Mutable Data Structures Lists: Can be changed after creation. Dictionaries: Can have their content modified. Immutable Data Structures Tuples: Cannot be changed after creation. Areas of Usage Lists Use lists when you need an ordered collection of items that can change. Example: Storing a sequence of user inputs or results from computations. Tuples Use tuples when you need an ordered collection of items that should not be changed. Example: Returning multiple values from a function. Dictionaries Use dictionaries when you need a collection of key-value pairs for fast lookups. Example: Storing user information where each user ID is a key. ## Solving Problems Using Lists, Tuples, and Dictionaries ### Example Problem 1: List Manipulation\n# Given a list of numbers, find the sum of even numbers\nnumbers = [1, 2, 3, 4, 5, 6]\neven_sum = sum(num for num in numbers if num % 2 == 0)\nprint(even_sum)\n\n\nExample Problem 2: Tuple Usage\n# Given a tuple of coordinates, compute the distance from origin\ncoordinates = (3, 4)\ndistance = (coordinates[0]**2 + coordinates[1]**2)**0.5\nprint(distance)\n\n\nExample Problem 3: Dictionary Operations\n# Given a dictionary of student grades, compute the average grade\ngrades = {'Alice': 85, 'Bob': 92, 'Charlie': 78}\naverage = sum(grades.values()) / len(grades)\nprint(average)"
+  },
+  {
+    "objectID": "index.html#simple-calculator",
+    "href": "index.html#simple-calculator",
+    "title": "Introduction to Python Programming",
+    "section": "1. Simple Calculator",
+    "text": "1. Simple Calculator\nDescription: Create a basic calculator that performs addition, subtraction, multiplication, and division. Add error handling for division by zero and invalid input.\nConcepts Covered: Functions, conditionals, basic arithmetic operations."
+  },
+  {
+    "objectID": "index.html#to-do-list-application",
+    "href": "index.html#to-do-list-application",
+    "title": "Introduction to Python Programming",
+    "section": "2. To-Do List Application",
+    "text": "2. To-Do List Application\nDescription: Develop a command-line to-do list application where users can add, remove, and view tasks. Tasks should be stored in a text file to persist between sessions.\nConcepts Covered: File handling, lists, basic CRUD operations."
+  },
+  {
+    "objectID": "index.html#number-guessing-game",
+    "href": "index.html#number-guessing-game",
+    "title": "Introduction to Python Programming",
+    "section": "3. Number Guessing Game",
+    "text": "3. Number Guessing Game\nDescription: Build a game where the computer randomly selects a number within a given range, and the user has to guess it. Provide feedback on whether the guess is too high or too low, and count the number of attempts.\nConcepts Covered: Random number generation, loops, conditionals."
+  },
+  {
+    "objectID": "index.html#simple-bank-management-system",
+    "href": "index.html#simple-bank-management-system",
+    "title": "Introduction to Python Programming",
+    "section": "4. Simple Bank Management System",
+    "text": "4. Simple Bank Management System\nDescription: Implement a basic bank management system where users can create an account, check balance, deposit money, and withdraw money. Use a dictionary to store user data.\nConcepts Covered: Dictionaries, functions, basic data management."
+  },
+  {
+    "objectID": "index.html#temperature-converter",
+    "href": "index.html#temperature-converter",
+    "title": "Introduction to Python Programming",
+    "section": "5. Temperature Converter",
+    "text": "5. Temperature Converter\nDescription: Create a program that converts temperatures between Celsius, Fahrenheit, and Kelvin. Allow users to input the temperature and select the conversion type.\nConcepts Covered: Functions, user input, basic arithmetic."
+  },
+  {
+    "objectID": "index.html#quiz-application",
+    "href": "index.html#quiz-application",
+    "title": "Introduction to Python Programming",
+    "section": "6. Quiz Application",
+    "text": "6. Quiz Application\nDescription: Design a quiz application that presents multiple-choice questions to the user. Keep track of the score and display it at the end.\nConcepts Covered: Lists, dictionaries, loops, conditionals."
+  },
+  {
+    "objectID": "index.html#simple-contact-book",
+    "href": "index.html#simple-contact-book",
+    "title": "Introduction to Python Programming",
+    "section": "7. Simple Contact Book",
+    "text": "7. Simple Contact Book\nDescription: Build a contact book where users can add, view, update, and delete contact information. Store contacts in a dictionary or text file.\nConcepts Covered: File handling or dictionary operations, CRUD operations."
+  },
+  {
+    "objectID": "index.html#tic-tac-toe-game",
+    "href": "index.html#tic-tac-toe-game",
+    "title": "Introduction to Python Programming",
+    "section": "8. Tic-Tac-Toe Game",
+    "text": "8. Tic-Tac-Toe Game\nDescription: Create a simple text-based Tic-Tac-Toe game where two players can play against each other. Implement a function to check for win conditions.\nConcepts Covered: Lists, functions, game logic."
+  },
+  {
+    "objectID": "index.html#password-generator",
+    "href": "index.html#password-generator",
+    "title": "Introduction to Python Programming",
+    "section": "9. Password Generator",
+    "text": "9. Password Generator\nDescription: Develop a program that generates random passwords with a specified length and complexity. Allow users to choose the types of characters (e.g., letters, numbers, symbols).\nConcepts Covered: Random module, strings, functions."
+  },
+  {
+    "objectID": "index.html#student-grade-management-system",
+    "href": "index.html#student-grade-management-system",
+    "title": "Introduction to Python Programming",
+    "section": "10. Student Grade Management System",
+    "text": "10. Student Grade Management System\nDescription: Create a system to manage student grades. Users can input grades, view grades for individual students, and calculate the average grade for each student.\nConcepts Covered: Lists, dictionaries, basic statistics."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
