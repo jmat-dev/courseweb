@@ -182,6 +182,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#mathematical-functions" id="toc-mathematical-functions" class="nav-link" data-scroll-target="#mathematical-functions">Mathematical Functions</a></li>
   </ul></li>
   <li><a href="#strings" id="toc-strings" class="nav-link" data-scroll-target="#strings">Strings</a></li>
+  <li><a href="#concepts-of-lists-tuples-and-dictionaries" id="toc-concepts-of-lists-tuples-and-dictionaries" class="nav-link" data-scroll-target="#concepts-of-lists-tuples-and-dictionaries">Concepts of Lists, Tuples, and Dictionaries</a>
+  <ul class="collapse">
+  <li><a href="#lists" id="toc-lists" class="nav-link" data-scroll-target="#lists">Lists</a>
+  <ul class="collapse">
+  <li><a href="#key-features" id="toc-key-features" class="nav-link" data-scroll-target="#key-features">Key Features</a></li>
+  <li><a href="#example-1" id="toc-example-1" class="nav-link" data-scroll-target="#example-1">Example</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -227,7 +235,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <section id="example" class="level3">
 <h3 class="anchored" data-anchor-id="example">Example</h3>
-<div id="28ee5d42" class="cell" data-execution_count="1">
+<div id="e4017dd7" class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Demonstrating different data types</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Integer</span></span>
@@ -258,7 +266,7 @@ Boolean: True &lt;class 'bool'&gt;</code></pre>
 <section id="variables" class="level2">
 <h2 class="anchored" data-anchor-id="variables">Variables</h2>
 <p>Variables are used to store data in memory. A variable is created when you assign a value to it using the = operator.</p>
-<div id="62bffd0b" class="cell" data-execution_count="2">
+<div id="91343edf" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Variable assignment</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span></span>
@@ -278,7 +286,7 @@ z = 7.5</code></pre>
 <section id="input-and-output-statements" class="level2">
 <h2 class="anchored" data-anchor-id="input-and-output-statements">Input and Output Statements</h2>
 <p>Python provides the input() function to take user input and the print() function to display output.</p>
-<div id="6ce49b7e" class="cell" data-execution_count="3">
+<div id="3307793e" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Input and Output</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>name<span class="op">=</span><span class="st">"justin"</span></span>
 <span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>age<span class="op">=</span><span class="dv">32</span></span>
@@ -295,7 +303,7 @@ z = 7.5</code></pre>
 <h2 class="anchored" data-anchor-id="operators">Operators</h2>
 <p>Operators are special symbols used to perform operations on variables and values. Python supports several types of operators:</p>
 <p>Arithmetic Operators: +, -, *, /, //, %, ** Comparison Operators: ==, !=, &gt;, &lt;, &gt;=, &lt;= Logical Operators: and, or, not Assignment Operators: =, +=, -=, *=, /=, //=, %=, **=</p>
-<div id="a8fd9999" class="cell" data-execution_count="4">
+<div id="875780eb" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Arithmetic Operations</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="dv">15</span></span>
@@ -330,7 +338,7 @@ Exponentiation: 50625</code></pre>
 <section id="arithmetic-expressions" class="level2">
 <h2 class="anchored" data-anchor-id="arithmetic-expressions">Arithmetic Expressions</h2>
 <p>An arithmetic expression is a combination of numbers, operators, and variables that evaluates to a value.</p>
-<div id="447f7c5a" class="cell" data-execution_count="5">
+<div id="abf62d65" class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Evaluating arithmetic expressions</span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>expression <span class="op">=</span> (<span class="dv">5</span> <span class="op">+</span> <span class="dv">2</span>) <span class="op">*</span> (<span class="dv">10</span> <span class="op">-</span> <span class="dv">3</span>) <span class="op">/</span> <span class="dv">2</span> <span class="op">**</span> <span class="dv">2</span></span>
@@ -344,7 +352,7 @@ Exponentiation: 50625</code></pre>
 <h2 class="anchored" data-anchor-id="operator-precedence">Operator Precedence</h2>
 <p>Operator precedence determines the order in which operations are performed in an expression. The following list shows the precedence from highest to lowest:</p>
 <p>** (Exponentiation) *, /, //, % (Multiplication, Division, Floor Division, Modulus) +, - (Addition, Subtraction)</p>
-<div id="e22769ad" class="cell" data-execution_count="6">
+<div id="8660637a" class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Operator precedence</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> <span class="dv">5</span> <span class="op">+</span> <span class="dv">3</span> <span class="op">*</span> <span class="dv">2</span> <span class="op">**</span> <span class="dv">2</span> <span class="op">-</span> <span class="dv">1</span></span>
@@ -357,7 +365,7 @@ Exponentiation: 50625</code></pre>
 <section id="evaluation-of-expressions" class="level2">
 <h2 class="anchored" data-anchor-id="evaluation-of-expressions">Evaluation of Expressions</h2>
 <p>Python evaluates expressions from left to right, following the precedence rules.</p>
-<div id="9a647648" class="cell" data-execution_count="7">
+<div id="a6831914" class="cell" data-execution_count="7">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Evaluation of expressions</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>value <span class="op">=</span> (<span class="dv">10</span> <span class="op">+</span> <span class="dv">5</span>) <span class="op">*</span> <span class="dv">2</span> <span class="op">-</span> <span class="dv">3</span> <span class="op">/</span> <span class="dv">3</span></span>
@@ -375,7 +383,7 @@ Exponentiation: 50625</code></pre>
 <h2 class="anchored" data-anchor-id="the-if-statement">The <code>if</code> Statement</h2>
 <p>The <code>if</code> statement tests a specific condition. If the condition is true, the code block under the <code>if</code> statement is executed.</p>
 <p>Example</p>
-<div id="d2882ec8" class="cell" data-execution_count="8">
+<div id="88f806e7" class="cell" data-execution_count="8">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of an if statement</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="dv">10</span></span>
@@ -391,7 +399,7 @@ Exponentiation: 50625</code></pre>
 <section id="the-if-else-statement" class="level2">
 <h2 class="anchored" data-anchor-id="the-if-else-statement">The if-else Statement</h2>
 <p>The if-else statement allows you to execute one block of code if the condition is true and another block if it is false.</p>
-<div id="ebdf4fd6" class="cell" data-execution_count="9">
+<div id="5b91a55d" class="cell" data-execution_count="9">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of an if-else statement</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="op">-</span><span class="dv">5</span></span>
@@ -405,7 +413,7 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>Explanation In this example, the program checks if number is greater than or equal to 0. If true, it prints that the number is non-negative. Otherwise, it prints that the number is negative. Example 2</p>
-<div id="a8b25c47" class="cell" data-execution_count="10">
+<div id="e1ab313d" class="cell" data-execution_count="10">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">20</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> age <span class="op">&gt;=</span> <span class="dv">18</span>:</span>
@@ -417,7 +425,7 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>Explanation This program checks if a person’s age is greater than or equal to 18. If true, it prints that the person is eligible to vote. Otherwise, it states they are not eligible to vote. ## The elif Statement The elif statement, short for “else if,” allows you to check multiple conditions sequentially. If one of the conditions is true, the corresponding block of code is executed.</p>
-<div id="3e708b97" class="cell" data-execution_count="11">
+<div id="28bf81a6" class="cell" data-execution_count="11">
 <div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of an elif statement</span></span>
 <span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="dv">0</span></span>
@@ -433,7 +441,7 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>Explanation Here, the program checks three conditions: whether the number is positive, zero, or negative. The elif statement handles the case where number is exactly 0.</p>
-<div id="ab73a22b" class="cell" data-execution_count="12">
+<div id="57d238f2" class="cell" data-execution_count="12">
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Another example of an elif statement</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>marks <span class="op">=</span> <span class="dv">85</span></span>
@@ -457,7 +465,7 @@ Exponentiation: 50625</code></pre>
 <section id="nested-if-else-statements" class="level2">
 <h2 class="anchored" data-anchor-id="nested-if-else-statements">Nested if-else Statements</h2>
 <p>Nested if-else statements allow you to include an if-else statement inside another if-else block for handling more complex conditions.</p>
-<div id="0768b612" class="cell" data-execution_count="13">
+<div id="76479c6b" class="cell" data-execution_count="13">
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of nested if-else statements</span></span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="dv">25</span></span>
@@ -472,7 +480,7 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>Explanation This example checks if a number is positive and then further checks whether it is even or odd using nested if-else statements.</p>
-<div id="52e6e9d4" class="cell" data-execution_count="14">
+<div id="bf4508bb" class="cell" data-execution_count="14">
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Another example of nested if-else statements</span></span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>score <span class="op">=</span> <span class="dv">92</span></span>
@@ -500,7 +508,7 @@ Exponentiation: 50625</code></pre>
 <h3 class="anchored" data-anchor-id="the-for-loop">The <code>for</code> Loop</h3>
 <p>The <code>for</code> loop in Python is used to iterate over a sequence (such as a list, tuple, string, or range). It automatically handles the iteration, making it straightforward to loop through each element in the sequence.</p>
 <p><strong>Syntax</strong>: for variable in sequence: # Code block to be executed # Program to calculate the sum of numbers from 1 to 10</p>
-<div id="0481a509" class="cell" data-execution_count="15">
+<div id="9f7949be" class="cell" data-execution_count="15">
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="bu">sum</span> <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>):</span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">sum</span> <span class="op">+=</span> i</span>
@@ -510,7 +518,7 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>##The while Loop The while loop continues to execute a block of code as long as a given condition is true. This type of loop is more flexible than the for loop because it can execute an indeterminate number of times. Syntax: while condition: # Code block to be executed</p>
-<div id="31e1b7a2" class="cell" data-execution_count="16">
+<div id="8e0090e5" class="cell" data-execution_count="16">
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Program to find the factorial of a number</span></span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>num <span class="op">=</span> <span class="dv">5</span></span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>factorial <span class="op">=</span> <span class="dv">1</span></span>
@@ -523,7 +531,7 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>Nested Loops A nested loop is a loop inside another loop. This allows the execution of complex iterations, where each iteration of the outer loop triggers the full execution of the inner loop.</p>
-<div id="6a3f9f70" class="cell" data-execution_count="17">
+<div id="209c3cb5" class="cell" data-execution_count="17">
 <div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Program to print a multiplication table using nested loops</span></span>
 <span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>):</span>
 <span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>):</span>
@@ -538,7 +546,7 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>##Control Flow Statements: break, continue, and pass break: Terminates the loop prematurely when a specific condition is met.</p>
-<div id="8f15e5ca" class="cell" data-execution_count="18">
+<div id="0b6c1b6e" class="cell" data-execution_count="18">
 <div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Program to find the first number divisible by 7 in a list</span></span>
 <span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> num <span class="kw">in</span> [<span class="dv">12</span>, <span class="dv">15</span>, <span class="dv">21</span>, <span class="dv">29</span>, <span class="dv">42</span>]:</span>
 <span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> num <span class="op">%</span> <span class="dv">7</span> <span class="op">==</span> <span class="dv">0</span>:</span>
@@ -549,7 +557,7 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>continue: Skips the current iteration and moves on to the next one when a condition is met.</p>
-<div id="6a4c480f" class="cell" data-execution_count="19">
+<div id="e4183f0d" class="cell" data-execution_count="19">
 <div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Program to print odd numbers between 1 and 10</span></span>
 <span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">11</span>):</span>
 <span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
@@ -564,13 +572,13 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>pass: Acts as a placeholder, allowing you to write a loop without any operation when needed. It is often used in scenarios where the code block needs to be defined later.</p>
-<div id="8513e4a9" class="cell" data-execution_count="20">
+<div id="31e89abc" class="cell" data-execution_count="20">
 <div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Example of a loop with a pass statement</span></span>
 <span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>):</span>
 <span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">pass</span>  <span class="co"># Logic will be added later</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>##The range Function The range function is often used in for loops to generate a sequence of numbers. It allows for iteration over a range of values with control over the start, stop, and step values. range(start, stop, step)</p>
-<div id="147882b2" class="cell" data-execution_count="21">
+<div id="65558890" class="cell" data-execution_count="21">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Program to print numbers from 1 to 5</span></span>
 <span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">6</span>):</span>
 <span id="cb40-3"><a href="#cb40-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -583,7 +591,7 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>#Sample Programs Using Looping Constructs #Sum of all even numbers between 1 and 100:</p>
-<div id="c8e9b85d" class="cell" data-execution_count="22">
+<div id="74537fab" class="cell" data-execution_count="22">
 <div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>sum_even <span class="op">=</span> <span class="dv">0</span></span>
 <span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> num <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>, <span class="dv">101</span>):</span>
 <span id="cb42-3"><a href="#cb42-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> num <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>:</span>
@@ -594,7 +602,7 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>#Prime number check using a while loop:</p>
-<div id="fc1a2ba6" class="cell" data-execution_count="23">
+<div id="ed0f81bf" class="cell" data-execution_count="23">
 <div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a>num <span class="op">=</span> <span class="dv">29</span></span>
 <span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>is_prime <span class="op">=</span> <span class="va">True</span></span>
 <span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>i <span class="op">=</span> <span class="dv">2</span></span>
@@ -612,7 +620,7 @@ Exponentiation: 50625</code></pre>
 </div>
 </div>
 <p>#Fibonacci series using nested loops:</p>
-<div id="43ad44d3" class="cell" data-execution_count="24">
+<div id="d67fdca1" class="cell" data-execution_count="24">
 <div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a>n <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>a, b <span class="op">=</span> <span class="dv">0</span>, <span class="dv">1</span></span>
 <span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Fibonacci series up to"</span>, n, <span class="st">":"</span>)</span>
@@ -662,7 +670,7 @@ result = add(5, 3)</code></pre>
 <ol type="1">
 <li><strong>Calculate Factorial of a Number</strong></li>
 </ol>
-<div id="5a10f587" class="cell" data-execution_count="25">
+<div id="badee169" class="cell" data-execution_count="25">
 <div class="sourceCode cell-code" id="cb51"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> factorial(n):</span>
 <span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> n <span class="op">==</span> <span class="dv">0</span>:</span>
 <span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="dv">1</span></span>
@@ -677,7 +685,7 @@ result = add(5, 3)</code></pre>
 <ol start="2" type="1">
 <li><strong>Check if a Number is Prime</strong></li>
 </ol>
-<div id="b90128cf" class="cell" data-execution_count="26">
+<div id="c87bae46" class="cell" data-execution_count="26">
 <div class="sourceCode cell-code" id="cb53"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> is_prime(num):</span>
 <span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> num <span class="op">&lt;=</span> <span class="dv">1</span>:</span>
 <span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="va">False</span></span>
@@ -696,7 +704,7 @@ result = add(5, 3)</code></pre>
 <h2 class="anchored" data-anchor-id="type-conversion-and-coercion">Type Conversion and Coercion</h2>
 <p>Python provides several built-in functions for type conversion, such as <code>int()</code>, <code>float()</code>, and <code>str()</code>. Type coercion refers to the implicit conversion of data types during operations.</p>
 <p>Example:</p>
-<div id="a4dd44ab" class="cell" data-execution_count="27">
+<div id="a9552347" class="cell" data-execution_count="27">
 <div class="sourceCode cell-code" id="cb55"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="st">"5"</span></span>
 <span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">10</span></span>
 <span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> <span class="bu">int</span>(x) <span class="op">+</span> y  <span class="co"># Explicit type conversion</span></span>
@@ -715,7 +723,7 @@ result = add(5, 3)</code></pre>
 <h2 class="anchored" data-anchor-id="mathematical-functions">Mathematical Functions</h2>
 <p>Python provides a module named <code>math</code> that includes various mathematical functions like <code>sqrt()</code>, <code>sin()</code>, <code>cos()</code>, and more.</p>
 <p>Example:</p>
-<div id="8e78a276" class="cell" data-execution_count="28">
+<div id="be1d79ed" class="cell" data-execution_count="28">
 <div class="sourceCode cell-code" id="cb57"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> math</span>
 <span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(math.sqrt(<span class="dv">16</span>))  <span class="co"># Output: 4.0</span></span>
@@ -734,18 +742,18 @@ result = add(5, 3)</code></pre>
 <p>Example:</p>
 <div class="sourceCode" id="cb59"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>my_string <span class="op">=</span> <span class="st">"Hello, World!"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Python also supports multi-line strings, which are enclosed in triple quotes (’’’ or “““).</p>
-<div id="f31a025f" class="cell" data-execution_count="29">
+<div id="bc4599ca" class="cell" data-execution_count="29">
 <div class="sourceCode cell-code" id="cb60"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>multi_line_string <span class="op">=</span> <span class="st">'''This is a</span></span>
 <span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="st">multi-line string.'''</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>##String Handling Functions Python provides several built-in functions to manipulate strings. Here are some commonly used string handling functions:</p>
 <p>###len() The len() function returns the length of a string (i.e., the number of characters).</p>
-<div id="bf5d002c" class="cell" data-execution_count="30">
+<div id="d5e298a3" class="cell" data-execution_count="30">
 <div class="sourceCode cell-code" id="cb61"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb61-1"><a href="#cb61-1" aria-hidden="true" tabindex="-1"></a>my_string <span class="op">=</span> <span class="st">"Hello"</span></span>
 <span id="cb61-2"><a href="#cb61-2" aria-hidden="true" tabindex="-1"></a>length <span class="op">=</span> <span class="bu">len</span>(my_string)  <span class="co"># Output: 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>###upper() and lower() The upper() function converts all characters in a string to uppercase, while lower() converts them to lowercase.</p>
-<div id="e13256a4" class="cell" data-execution_count="31">
+<div id="e86e2151" class="cell" data-execution_count="31">
 <div class="sourceCode cell-code" id="cb62"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a>my_string <span class="op">=</span> <span class="st">"Hello"</span></span>
 <span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(my_string.upper())  <span class="co"># Output: HELLO</span></span>
 <span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(my_string.lower())  <span class="co"># Output: hello</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -755,7 +763,7 @@ hello</code></pre>
 </div>
 </div>
 <p>###strip() The strip() function removes leading and trailing whitespace from a string.</p>
-<div id="285c81d2" class="cell" data-execution_count="32">
+<div id="0b26e0c2" class="cell" data-execution_count="32">
 <div class="sourceCode cell-code" id="cb64"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a>my_string <span class="op">=</span> <span class="st">"   Hello   "</span></span>
 <span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(my_string.strip())  <span class="co"># Output: "Hello"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
@@ -763,19 +771,19 @@ hello</code></pre>
 </div>
 </div>
 <p>###replace() The replace() function replaces all occurrences of a substring with another substring.</p>
-<div id="c27fe093" class="cell" data-execution_count="33">
+<div id="a1b61487" class="cell" data-execution_count="33">
 <div class="sourceCode cell-code" id="cb66"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a>my_string <span class="op">=</span> <span class="st">"Hello, World!"</span></span>
 <span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a>new_string <span class="op">=</span> my_string.replace(<span class="st">"World"</span>, <span class="st">"Python"</span>)  <span class="co"># Output: "Hello, Python!"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>###split() and join() The split() function splits a string into a list of substrings based on a specified delimiter. The join() function does the opposite by joining a list of strings into a single string, with a specified delimiter.</p>
-<div id="9ca24fea" class="cell" data-execution_count="34">
+<div id="a4ee6653" class="cell" data-execution_count="34">
 <div class="sourceCode cell-code" id="cb67"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a>my_string <span class="op">=</span> <span class="st">"Hello, World!"</span></span>
 <span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a>words <span class="op">=</span> my_string.split(<span class="st">", "</span>)  <span class="co"># Output: ['Hello', 'World!']</span></span>
 <span id="cb67-3"><a href="#cb67-3" aria-hidden="true" tabindex="-1"></a>joined_string <span class="op">=</span> <span class="st">" "</span>.join(words)  <span class="co"># Output: "Hello World!"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>##Writing Simple Programs Using String Handling Functions Here are a few simple programs that demonstrate the use of string handling functions:</p>
 <p>###Check if a String is a Palindrome</p>
-<div id="81d3c058" class="cell" data-execution_count="35">
+<div id="163a2081" class="cell" data-execution_count="35">
 <div class="sourceCode cell-code" id="cb68"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> is_palindrome(s):</span>
 <span id="cb68-2"><a href="#cb68-2" aria-hidden="true" tabindex="-1"></a>    s <span class="op">=</span> s.lower().replace(<span class="st">" "</span>, <span class="st">""</span>)</span>
 <span id="cb68-3"><a href="#cb68-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s <span class="op">==</span> s[::<span class="op">-</span><span class="dv">1</span>]</span>
@@ -788,7 +796,7 @@ False</code></pre>
 </div>
 </div>
 <p>###Count the Number of Vowels in a String</p>
-<div id="238070fe" class="cell" data-execution_count="36">
+<div id="52f3ada8" class="cell" data-execution_count="36">
 <div class="sourceCode cell-code" id="cb70"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> count_vowels(s):</span>
 <span id="cb70-2"><a href="#cb70-2" aria-hidden="true" tabindex="-1"></a>    vowels <span class="op">=</span> <span class="st">"aeiou"</span></span>
 <span id="cb70-3"><a href="#cb70-3" aria-hidden="true" tabindex="-1"></a>    count <span class="op">=</span> <span class="dv">0</span></span>
@@ -803,7 +811,7 @@ False</code></pre>
 </div>
 </div>
 <p>###Reverse the Words in a Sentence</p>
-<div id="1e8f765e" class="cell" data-execution_count="37">
+<div id="bde28ae3" class="cell" data-execution_count="37">
 <div class="sourceCode cell-code" id="cb72"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> reverse_words(sentence):</span>
 <span id="cb72-2"><a href="#cb72-2" aria-hidden="true" tabindex="-1"></a>    words <span class="op">=</span> sentence.split()</span>
 <span id="cb72-3"><a href="#cb72-3" aria-hidden="true" tabindex="-1"></a>    reversed_sentence <span class="op">=</span> <span class="st">" "</span>.join(<span class="bu">reversed</span>(words))</span>
@@ -814,8 +822,52 @@ False</code></pre>
 <pre><code>World Hello</code></pre>
 </div>
 </div>
+</section>
+<section id="concepts-of-lists-tuples-and-dictionaries" class="level1">
+<h1>Concepts of Lists, Tuples, and Dictionaries</h1>
+<section id="lists" class="level2">
+<h2 class="anchored" data-anchor-id="lists">Lists</h2>
+<p>A list is an ordered collection of items which can be of any type. Lists are mutable, meaning you can change their content after creation.</p>
+<section id="key-features" class="level3">
+<h3 class="anchored" data-anchor-id="key-features">Key Features</h3>
+<ul>
+<li><strong>Syntax:</strong> <code>[]</code></li>
+<li><strong>Mutable:</strong> You can modify the list after it is created.</li>
+<li><strong>Operations:</strong> <code>append()</code>, <code>remove()</code>, <code>extend()</code>, <code>pop()</code>, <code>insert()</code>, and more.</li>
+</ul>
+</section>
+<section id="example-1" class="level3">
+<h3 class="anchored" data-anchor-id="example-1">Example</h3>
+<div class="sourceCode" id="cb74"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a>my_list <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="st">'a'</span>, <span class="st">'b'</span>]</span>
+<span id="cb74-2"><a href="#cb74-2" aria-hidden="true" tabindex="-1"></a>my_list.append(<span class="dv">4</span>)</span>
+<span id="cb74-3"><a href="#cb74-3" aria-hidden="true" tabindex="-1"></a>my_list.remove(<span class="st">'a'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>###Tuples A tuple is similar to a list but is immutable. Once a tuple is created, its content cannot be changed.</p>
+<p>Key Features Syntax: () Immutable: You cannot modify a tuple after it is created. Operations: Access, slicing, and concatenation.</p>
+<div class="sourceCode" id="cb75"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb75-1"><a href="#cb75-1" aria-hidden="true" tabindex="-1"></a>my_tuple <span class="op">=</span> (<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="st">'a'</span>, <span class="st">'b'</span>)</span>
+<span id="cb75-2"><a href="#cb75-2" aria-hidden="true" tabindex="-1"></a><span class="co"># my_tuple.append(4)  # This will raise an error</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>##Dictionaries A dictionary is an unordered collection of key-value pairs. Each key must be unique.</p>
+<p>Key Features Syntax: {} Mutable: You can change the value associated with a key. Operations: get(), items(), keys(), values(), and more.</p>
+<div class="sourceCode" id="cb76"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>my_dict <span class="op">=</span> {<span class="st">'name'</span>: <span class="st">'John'</span>, <span class="st">'age'</span>: <span class="dv">30</span>}</span>
+<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a>my_dict[<span class="st">'age'</span>] <span class="op">=</span> <span class="dv">31</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>####Operations and Functions Associated List Operations Adding Elements: append(), extend(), insert() Removing Elements: remove(), pop() Accessing Elements: Indexing, slicing Sorting: sort(), sorted() Tuple Operations Accessing Elements: Indexing, slicing Concatenation: + Repetition: * Dictionary Operations Adding/Updating Elements: dict[key] = value Removing Elements: del dict[key], pop() Accessing Elements: dict.get(key) Iteration: dict.items(), dict.keys(), dict.values() ####Mutable and Immutable Data Structures Mutable Data Structures Lists: Can be changed after creation. Dictionaries: Can have their content modified. Immutable Data Structures Tuples: Cannot be changed after creation. Areas of Usage Lists Use lists when you need an ordered collection of items that can change. Example: Storing a sequence of user inputs or results from computations. Tuples Use tuples when you need an ordered collection of items that should not be changed. Example: Returning multiple values from a function. Dictionaries Use dictionaries when you need a collection of key-value pairs for fast lookups. Example: Storing user information where each user ID is a key. ##Solving Problems Using Lists, Tuples, and Dictionaries ###Example Problem 1: List Manipulation</p>
+<div class="sourceCode" id="cb77"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb77-1"><a href="#cb77-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Given a list of numbers, find the sum of even numbers</span></span>
+<span id="cb77-2"><a href="#cb77-2" aria-hidden="true" tabindex="-1"></a>numbers <span class="op">=</span> [<span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="dv">5</span>, <span class="dv">6</span>]</span>
+<span id="cb77-3"><a href="#cb77-3" aria-hidden="true" tabindex="-1"></a>even_sum <span class="op">=</span> <span class="bu">sum</span>(num <span class="cf">for</span> num <span class="kw">in</span> numbers <span class="cf">if</span> num <span class="op">%</span> <span class="dv">2</span> <span class="op">==</span> <span class="dv">0</span>)</span>
+<span id="cb77-4"><a href="#cb77-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(even_sum)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>####Example Problem 2: Tuple Usage</p>
+<div class="sourceCode" id="cb78"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Given a tuple of coordinates, compute the distance from origin</span></span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>coordinates <span class="op">=</span> (<span class="dv">3</span>, <span class="dv">4</span>)</span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>distance <span class="op">=</span> (coordinates[<span class="dv">0</span>]<span class="op">**</span><span class="dv">2</span> <span class="op">+</span> coordinates[<span class="dv">1</span>]<span class="op">**</span><span class="dv">2</span>)<span class="op">**</span><span class="fl">0.5</span></span>
+<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(distance)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>####Example Problem 3: Dictionary Operations</p>
+<div class="sourceCode" id="cb79"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Given a dictionary of student grades, compute the average grade</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a>grades <span class="op">=</span> {<span class="st">'Alice'</span>: <span class="dv">85</span>, <span class="st">'Bob'</span>: <span class="dv">92</span>, <span class="st">'Charlie'</span>: <span class="dv">78</span>}</span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a>average <span class="op">=</span> <span class="bu">sum</span>(grades.values()) <span class="op">/</span> <span class="bu">len</span>(grades)</span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(average)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
