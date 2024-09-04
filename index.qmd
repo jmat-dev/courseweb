@@ -475,4 +475,92 @@ print(math.sqrt(16))  # Output: 4.0
 print(math.sin(math.pi/2))  # Output: 1.0
 ```
 
+# Strings
 
+In this module, we will explore the concept of strings in Python. You will learn about various string handling functions and how to write simple programs using these functions.
+
+
+
+Strings are sequences of characters used to store and manipulate text. In Python, strings are enclosed in either single quotes (`'`) or double quotes (`"`).
+
+Example:
+```python
+my_string = "Hello, World!"
+```
+Python also supports multi-line strings, which are enclosed in triple quotes (''' or """).
+```{python}
+multi_line_string = '''This is a
+multi-line string.'''
+```
+##String Handling Functions
+Python provides several built-in functions to manipulate strings. Here are some commonly used string handling functions:
+
+###len()
+The len() function returns the length of a string (i.e., the number of characters).
+```{python}
+my_string = "Hello"
+length = len(my_string)  # Output: 5
+```
+###upper() and lower()
+The upper() function converts all characters in a string to uppercase, while lower() converts them to lowercase.
+```{python}
+my_string = "Hello"
+print(my_string.upper())  # Output: HELLO
+print(my_string.lower())  # Output: hello
+
+```
+###strip()
+The strip() function removes leading and trailing whitespace from a string.
+```{python}
+my_string = "   Hello   "
+print(my_string.strip())  # Output: "Hello"
+```
+###replace()
+The replace() function replaces all occurrences of a substring with another substring.
+```{python}
+my_string = "Hello, World!"
+new_string = my_string.replace("World", "Python")  # Output: "Hello, Python!"
+```
+###split() and join()
+The split() function splits a string into a list of substrings based on a specified delimiter. The join() function does the opposite by joining a list of strings into a single string, with a specified delimiter.
+```{python}
+my_string = "Hello, World!"
+words = my_string.split(", ")  # Output: ['Hello', 'World!']
+joined_string = " ".join(words)  # Output: "Hello World!"
+```
+##Writing Simple Programs Using String Handling Functions
+Here are a few simple programs that demonstrate the use of string handling functions:
+
+###Check if a String is a Palindrome
+```{python}
+def is_palindrome(s):
+    s = s.lower().replace(" ", "")
+    return s == s[::-1]
+
+print(is_palindrome("Madam"))  # Output: True
+print(is_palindrome("Hello"))  # Output: False
+```
+###Count the Number of Vowels in a String
+```{python}
+def count_vowels(s):
+    vowels = "aeiou"
+    count = 0
+    for char in s.lower():
+        if char in vowels:
+            count += 1
+    return count
+
+print(count_vowels("Hello World"))  # Output: 3
+
+```
+###Reverse the Words in a Sentence
+
+
+```{python}
+def reverse_words(sentence):
+    words = sentence.split()
+    reversed_sentence = " ".join(reversed(words))
+    return reversed_sentence
+
+print(reverse_words("Hello World"))  # Output: "World Hello"
+```

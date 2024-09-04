@@ -133,13 +133,6 @@
     "text": "Mathematical Functions\nPython provides a module named math that includes various mathematical functions like sqrt(), sin(), cos(), and more.\nExample:\n\nimport math\n\nprint(math.sqrt(16))  # Output: 4.0\nprint(math.sin(math.pi/2))  # Output: 1.0\n\n4.0\n1.0"
   },
   {
-    "objectID": "index.html#conclusion",
-    "href": "index.html#conclusion",
-    "title": "Introduction to Python Programming",
-    "section": "Conclusion",
-    "text": "Conclusion\nUnderstanding and implementing functions in Python is a crucial aspect of programming. This module covered various ways to define, call, and utilize functions, as well as special function types like lambda functions and mathematical functions."
-  },
-  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
