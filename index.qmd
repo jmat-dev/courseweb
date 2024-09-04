@@ -458,7 +458,7 @@ print(z)  # Output: 15
 Lambda functions are small anonymous functions defined using the `lambda` keyword. They can have any number of arguments but only one expression.
 
 Example:
-```[python}
+```{python}
 square = lambda x: x ** 2
 print(square(4))  # Output: 16
 ```
@@ -492,16 +492,16 @@ Python also supports multi-line strings, which are enclosed in triple quotes (''
 multi_line_string = '''This is a
 multi-line string.'''
 ```
-##String Handling Functions
+## String Handling Functions
 Python provides several built-in functions to manipulate strings. Here are some commonly used string handling functions:
 
-###len()
+### len()
 The len() function returns the length of a string (i.e., the number of characters).
 ```{python}
 my_string = "Hello"
 length = len(my_string)  # Output: 5
 ```
-###upper() and lower()
+### upper() and lower()
 The upper() function converts all characters in a string to uppercase, while lower() converts them to lowercase.
 ```{python}
 my_string = "Hello"
@@ -509,29 +509,29 @@ print(my_string.upper())  # Output: HELLO
 print(my_string.lower())  # Output: hello
 
 ```
-###strip()
+### strip()
 The strip() function removes leading and trailing whitespace from a string.
 ```{python}
 my_string = "   Hello   "
 print(my_string.strip())  # Output: "Hello"
 ```
-###replace()
+### replace()
 The replace() function replaces all occurrences of a substring with another substring.
 ```{python}
 my_string = "Hello, World!"
 new_string = my_string.replace("World", "Python")  # Output: "Hello, Python!"
 ```
-###split() and join()
+### split() and join()
 The split() function splits a string into a list of substrings based on a specified delimiter. The join() function does the opposite by joining a list of strings into a single string, with a specified delimiter.
 ```{python}
 my_string = "Hello, World!"
 words = my_string.split(", ")  # Output: ['Hello', 'World!']
 joined_string = " ".join(words)  # Output: "Hello World!"
 ```
-##Writing Simple Programs Using String Handling Functions
+## Writing Simple Programs Using String Handling Functions
 Here are a few simple programs that demonstrate the use of string handling functions:
 
-###Check if a String is a Palindrome
+### Check if a String is a Palindrome
 ```{python}
 def is_palindrome(s):
     s = s.lower().replace(" ", "")
@@ -581,7 +581,7 @@ my_list = [1, 2, 3, 'a', 'b']
 my_list.append(4)
 my_list.remove('a')
 ```
-###Tuples
+### Tuples
 A tuple is similar to a list but is immutable. Once a tuple is created, its content cannot be changed.
 
 Key Features
@@ -592,7 +592,7 @@ Operations: Access, slicing, and concatenation.
 my_tuple = (1, 2, 3, 'a', 'b')
 # my_tuple.append(4)  # This will raise an error
 ```
-##Dictionaries
+### Dictionaries
 A dictionary is an unordered collection of key-value pairs. Each key must be unique.
 
 Key Features
@@ -603,7 +603,7 @@ Operations: get(), items(), keys(), values(), and more.
 my_dict = {'name': 'John', 'age': 30}
 my_dict['age'] = 31
 ```
-####Operations and Functions Associated
+### Operations and Functions Associated
 List Operations
 Adding Elements: append(), extend(), insert()
 Removing Elements: remove(), pop()
@@ -618,7 +618,7 @@ Adding/Updating Elements: dict[key] = value
 Removing Elements: del dict[key], pop()
 Accessing Elements: dict.get(key)
 Iteration: dict.items(), dict.keys(), dict.values()
-####Mutable and Immutable Data Structures
+### Mutable and Immutable Data Structures
 Mutable Data Structures
 Lists: Can be changed after creation.
 Dictionaries: Can have their content modified.
@@ -634,22 +634,22 @@ Example: Returning multiple values from a function.
 Dictionaries
 Use dictionaries when you need a collection of key-value pairs for fast lookups.
 Example: Storing user information where each user ID is a key.
-##Solving Problems Using Lists, Tuples, and Dictionaries
-###Example Problem 1: List Manipulation
+## Solving Problems Using Lists, Tuples, and Dictionaries
+### Example Problem 1: List Manipulation
 ```python
 # Given a list of numbers, find the sum of even numbers
 numbers = [1, 2, 3, 4, 5, 6]
 even_sum = sum(num for num in numbers if num % 2 == 0)
 print(even_sum)
 ```
-####Example Problem 2: Tuple Usage
+### Example Problem 2: Tuple Usage
 ```python
 # Given a tuple of coordinates, compute the distance from origin
 coordinates = (3, 4)
 distance = (coordinates[0]**2 + coordinates[1]**2)**0.5
 print(distance)
 ```
-####Example Problem 3: Dictionary Operations
+### Example Problem 3: Dictionary Operations
 ```python
 # Given a dictionary of student grades, compute the average grade
 grades = {'Alice': 85, 'Bob': 92, 'Charlie': 78}
