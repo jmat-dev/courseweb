@@ -7,13 +7,6 @@
     "text": "In this tutorial, we will cover the basics of Python programming, including data types, keywords, variables, input/output statements, operators, arithmetic expressions, operator precedence, and evaluation of expressions.\n\n\nPython supports several built-in data types. Let’s explore some of the most common ones:\n\nInteger (int): Represents whole numbers.\nFloating Point (float): Represents decimal numbers.\nString (str): Represents sequences of characters.\nBoolean (bool): Represents True or False.\n\n\n\n\n# Demonstrating different data types\n\n# Integer\na = 10\nprint(\"Integer:\", a, type(a))\n\n# Float\nb = 3.14\nprint(\"Float:\", b, type(b))\n\n\n# String\nc = \"Hello, Python!\"\nprint(\"String:\", c, type(c))\n\n# Boolean\nd = True\nprint(\"Boolean:\", d, type(d))\n\nInteger: 10 &lt;class 'int'&gt;\nFloat: 3.14 &lt;class 'float'&gt;\nString: Hello, Python! &lt;class 'str'&gt;\nBoolean: True &lt;class 'bool'&gt;\n\n\n\n\n\n\nVariables are used to store data in memory. A variable is created when you assign a value to it using the = operator.\n\n# Variable assignment\n\nx = 5\ny = 2.5\nz = x + y\n\nprint(\"x =\", x)\nprint(\"y =\", y)\nprint(\"z =\", z)\n\nx = 5\ny = 2.5\nz = 7.5\n\n\n\n\n\nPython provides the input() function to take user input and the print() function to display output.\n\n# Input and Output\nname=\"justin\"\nage=32\n#name = input(\"Enter your name: \")\n#age = int(input(\"Enter your age: \"))\n\nprint(f\"Hello, {name}! You are {age} years old.\")\n\nHello, justin! You are 32 years old.\n\n\n\n\n\nOperators are special symbols used to perform operations on variables and values. Python supports several types of operators:\nArithmetic Operators: +, -, *, /, //, %, ** Comparison Operators: ==, !=, &gt;, &lt;, &gt;=, &lt;= Logical Operators: and, or, not Assignment Operators: =, +=, -=, *=, /=, //=, %=, **=\n\n# Arithmetic Operations\n\na = 15\nb = 4\n\naddition = a + b\nsubtraction = a - b\nmultiplication = a * b\ndivision = a / b\nfloor_division = a // b\nmodulus = a % b\nexponentiation = a ** b\n\nprint(\"Addition:\", addition)\nprint(\"Subtraction:\", subtraction)\nprint(\"Multiplication:\", multiplication)\nprint(\"Division:\", division)\nprint(\"Floor Division:\", floor_division)\nprint(\"Modulus:\", modulus)\nprint(\"Exponentiation:\", exponentiation)\n\nAddition: 19\nSubtraction: 11\nMultiplication: 60\nDivision: 3.75\nFloor Division: 3\nModulus: 3\nExponentiation: 50625\n\n\n\n\n\nAn arithmetic expression is a combination of numbers, operators, and variables that evaluates to a value.\n\n# Evaluating arithmetic expressions\n\nexpression = (5 + 2) * (10 - 3) / 2 ** 2\nprint(\"Expression Result:\", expression)\n\nExpression Result: 12.25\n\n\n\n\n\nOperator precedence determines the order in which operations are performed in an expression. The following list shows the precedence from highest to lowest:\n** (Exponentiation) *, /, //, % (Multiplication, Division, Floor Division, Modulus) +, - (Addition, Subtraction)\n\n# Operator precedence\n\nresult = 5 + 3 * 2 ** 2 - 1\nprint(\"Operator Precedence Result:\", result)\n\nOperator Precedence Result: 16\n\n\n\n\n\nPython evaluates expressions from left to right, following the precedence rules.\n\n# Evaluation of expressions\n\nvalue = (10 + 5) * 2 - 3 / 3\nprint(\"Evaluation Result:\", value)\n\nEvaluation Result: 29.0"
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site"
-  },
-  {
     "objectID": "index.html#data-types",
     "href": "index.html#data-types",
     "title": "Introduction to Python Programming",
@@ -63,13 +56,6 @@
     "text": "Python evaluates expressions from left to right, following the precedence rules.\n\n# Evaluation of expressions\n\nvalue = (10 + 5) * 2 - 3 / 3\nprint(\"Evaluation Result:\", value)\n\nEvaluation Result: 29.0"
   },
   {
-    "objectID": "index.html#conditional-statements-in-python",
-    "href": "index.html#conditional-statements-in-python",
-    "title": "Introduction to Python Programming",
-    "section": "",
-    "text": "Conditional statements in Python allow the execution of specific code blocks based on whether a condition is true or false. Let’s explore various types of conditional statements."
-  },
-  {
     "objectID": "index.html#the-if-statement",
     "href": "index.html#the-if-statement",
     "title": "Introduction to Python Programming",
@@ -89,5 +75,75 @@
     "title": "Introduction to Python Programming",
     "section": "Nested if-else Statements",
     "text": "Nested if-else Statements\nNested if-else statements allow you to include an if-else statement inside another if-else block for handling more complex conditions.\n\n# Example of nested if-else statements\n\nnumber = 25\n\nif number &gt; 0:\n    if number % 2 == 0:\n        print(f\"{number} is a positive even number.\")\n    else:\n        print(f\"{number} is a positive odd number.\")\n\n25 is a positive odd number.\n\n\nExplanation This example checks if a number is positive and then further checks whether it is even or odd using nested if-else statements.\n\n# Another example of nested if-else statements\n\nscore = 92\n\nif score &gt;= 50:\n    if score &gt;= 90:\n        print(\"Excellent!\")\n    else:\n        print(\"Good job!\")\nelse:\n    print(\"Better luck next time.\")\n\nExcellent!\n\n\nExplanation This program checks if a score is at least 50. If true, it further checks if the score is 90 or above, printing “Excellent!” if it is, and “Good job!” if it isn’t. If the score is below 50, it prints “Better luck next time.”"
+  },
+  {
+    "objectID": "index.html#programs-to-solve-numerical-problems-using-different-loop-structures-in-python",
+    "href": "index.html#programs-to-solve-numerical-problems-using-different-loop-structures-in-python",
+    "title": "Introduction to Python Programming",
+    "section": "Programs to Solve Numerical Problems Using Different Loop Structures in Python",
+    "text": "Programs to Solve Numerical Problems Using Different Loop Structures in Python\n\nIntroduction to Looping Concepts\nLoops are fundamental to programming, enabling the repeated execution of a block of code. In Python, loops are used to iterate over a sequence of elements, perform repetitive tasks, and solve complex numerical problems efficiently. The main types of loops in Python are for loops, while loops, and nested loops. Additionally, Python provides control flow statements like break, continue, and pass to manage loop execution.\n\n\nThe for Loop\nThe for loop in Python is used to iterate over a sequence (such as a list, tuple, string, or range). It automatically handles the iteration, making it straightforward to loop through each element in the sequence.\nSyntax: for variable in sequence: # Code block to be executed # Program to calculate the sum of numbers from 1 to 10\n\nsum = 0\nfor i in range(1, 11):\n    sum += i\nprint(\"Sum of numbers from 1 to 10 is:\", sum)\n\nSum of numbers from 1 to 10 is: 55\n\n\n##The while Loop The while loop continues to execute a block of code as long as a given condition is true. This type of loop is more flexible than the for loop because it can execute an indeterminate number of times. Syntax: while condition: # Code block to be executed\n\n# Program to find the factorial of a number\nnum = 5\nfactorial = 1\nwhile num &gt; 0:\n    factorial *= num\n    num -= 1\nprint(\"Factorial is:\", factorial)\n\nFactorial is: 120\n\n\nNested Loops A nested loop is a loop inside another loop. This allows the execution of complex iterations, where each iteration of the outer loop triggers the full execution of the inner loop.\n\n# Program to print a multiplication table using nested loops\nfor i in range(1, 6):\n    for j in range(1, 6):\n        print(i * j, end=\"\\t\")\n    print()\n\n1   2   3   4   5   \n2   4   6   8   10  \n3   6   9   12  15  \n4   8   12  16  20  \n5   10  15  20  25  \n\n\n##Control Flow Statements: break, continue, and pass break: Terminates the loop prematurely when a specific condition is met.\n\n# Program to find the first number divisible by 7 in a list\nfor num in [12, 15, 21, 29, 42]:\n    if num % 7 == 0:\n        print(\"First number divisible by 7 is:\", num)\n        break\n\nFirst number divisible by 7 is: 21\n\n\ncontinue: Skips the current iteration and moves on to the next one when a condition is met.\n\n# Program to print odd numbers between 1 and 10\nfor i in range(1, 11):\n    if i % 2 == 0:\n        continue\n    print(i)\n\n1\n3\n5\n7\n9\n\n\npass: Acts as a placeholder, allowing you to write a loop without any operation when needed. It is often used in scenarios where the code block needs to be defined later.\n\n# Example of a loop with a pass statement\nfor i in range(5):\n    pass  # Logic will be added later\n\n##The range Function The range function is often used in for loops to generate a sequence of numbers. It allows for iteration over a range of values with control over the start, stop, and step values. range(start, stop, step)\n\n# Program to print numbers from 1 to 5\nfor i in range(1, 6):\n    print(i)\n\n1\n2\n3\n4\n5\n\n\n#Sample Programs Using Looping Constructs #Sum of all even numbers between 1 and 100:\n\nsum_even = 0\nfor num in range(1, 101):\n    if num % 2 == 0:\n        sum_even += num\nprint(\"Sum of even numbers from 1 to 100 is:\", sum_even)\n\nSum of even numbers from 1 to 100 is: 2550\n\n\n#Prime number check using a while loop:\n\nnum = 29\nis_prime = True\ni = 2\nwhile i &lt;= num // 2:\n    if num % i == 0:\n        is_prime = False\n        break\n    i += 1\nif is_prime:\n    print(num, \"is a prime number\")\nelse:\n    print(num, \"is not a prime number\")\n\n29 is a prime number\n\n\n#Fibonacci series using nested loops:\n\nn = 10\na, b = 0, 1\nprint(\"Fibonacci series up to\", n, \":\")\nfor i in range(n):\n    print(a, end=\" \")\n    a, b = b, a + b\n\nFibonacci series up to 10 :\n0 1 1 2 3 5 8 13 21 34 \n\n\n#Functions\nIn this module, we will explore the concept of functions in Python. You will learn how to define and call functions, pass parameters, return values, and utilize various types of functions, including lambda functions. Additionally, we will cover type conversion, coercion, and mathematical functions."
+  },
+  {
+    "objectID": "index.html#way-of-writing-functions",
+    "href": "index.html#way-of-writing-functions",
+    "title": "Introduction to Python Programming",
+    "section": "Way of Writing Functions",
+    "text": "Way of Writing Functions\nIn Python, functions are defined using the def keyword, followed by the function name and parentheses () which may include parameters. The function body is indented and contains the code that executes when the function is called.\nExample:\ndef function_name(parameters):\n    # Function body\n    statement(s)"
+  },
+  {
+    "objectID": "index.html#how-to-call-functions",
+    "href": "index.html#how-to-call-functions",
+    "title": "Introduction to Python Programming",
+    "section": "How to Call Functions",
+    "text": "How to Call Functions\nOnce a function is defined, it can be called by using its name followed by parentheses. If the function takes parameters, you need to provide arguments in the parentheses.\nExample:\nfunction_name(arguments)"
+  },
+  {
+    "objectID": "index.html#passing-parameters-and-return-values",
+    "href": "index.html#passing-parameters-and-return-values",
+    "title": "Introduction to Python Programming",
+    "section": "Passing Parameters and Return Values",
+    "text": "Passing Parameters and Return Values\nFunctions can accept parameters (or arguments) that are passed to them when they are called. They can also return a value using the return statement.\nExample:\ndef add(a, b):\n    return a + b\n\nresult = add(5, 3)\nIn this example, 5 and 3 are passed to the add function as arguments, and the function returns their sum."
+  },
+  {
+    "objectID": "index.html#sample-programs-using-functions",
+    "href": "index.html#sample-programs-using-functions",
+    "title": "Introduction to Python Programming",
+    "section": "Sample Programs Using Functions",
+    "text": "Sample Programs Using Functions\nHere are a few sample programs that demonstrate the use of functions in Python:\n\nCalculate Factorial of a Number\n\n\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nprint(factorial(5))  # Output: 120\n\n120\n\n\n\nCheck if a Number is Prime\n\n\ndef is_prime(num):\n    if num &lt;= 1:\n        return False\n    for i in range(2, int(num**0.5) + 1):\n        if num % i == 0:\n            return False\n    return True\n\nprint(is_prime(11))  # Output: True\n\nTrue"
+  },
+  {
+    "objectID": "index.html#type-conversion-and-coercion",
+    "href": "index.html#type-conversion-and-coercion",
+    "title": "Introduction to Python Programming",
+    "section": "Type Conversion and Coercion",
+    "text": "Type Conversion and Coercion\nPython provides several built-in functions for type conversion, such as int(), float(), and str(). Type coercion refers to the implicit conversion of data types during operations.\nExample:\n\nx = \"5\"\ny = 10\nz = int(x) + y  # Explicit type conversion\nprint(z)  # Output: 15\n\n15"
+  },
+  {
+    "objectID": "index.html#lambda-functions",
+    "href": "index.html#lambda-functions",
+    "title": "Introduction to Python Programming",
+    "section": "Lambda Functions",
+    "text": "Lambda Functions\nLambda functions are small anonymous functions defined using the lambda keyword. They can have any number of arguments but only one expression.\nExample: [python} square = lambda x: x ** 2 print(square(4))  # Output: 16"
+  },
+  {
+    "objectID": "index.html#mathematical-functions",
+    "href": "index.html#mathematical-functions",
+    "title": "Introduction to Python Programming",
+    "section": "Mathematical Functions",
+    "text": "Mathematical Functions\nPython provides a module named math that includes various mathematical functions like sqrt(), sin(), cos(), and more.\nExample:\n\nimport math\n\nprint(math.sqrt(16))  # Output: 4.0\nprint(math.sin(math.pi/2))  # Output: 1.0\n\n4.0\n1.0"
+  },
+  {
+    "objectID": "index.html#conclusion",
+    "href": "index.html#conclusion",
+    "title": "Introduction to Python Programming",
+    "section": "Conclusion",
+    "text": "Conclusion\nUnderstanding and implementing functions in Python is a crucial aspect of programming. This module covered various ways to define, call, and utilize functions, as well as special function types like lambda functions and mathematical functions."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   }
 ]
