@@ -604,11 +604,12 @@ my_dict = {'name': 'John', 'age': 30}
 my_dict['age'] = 31
 ```
 ### Operations and Functions Associated
-#### List Operations
+**List Operations**
 Adding Elements: append(), extend(), insert()
 Removing Elements: remove(), pop()
 Accessing Elements: Indexing, slicing
 Sorting: sort(), sorted()
+
 #### Tuple Operations
 Accessing Elements: Indexing, slicing
 Concatenation: +
