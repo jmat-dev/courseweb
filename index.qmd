@@ -604,26 +604,26 @@ my_dict = {'name': 'John', 'age': 30}
 my_dict['age'] = 31
 ```
 ### Operations and Functions Associated
-**List Operations**
+### List Operations
 Adding Elements: append(), extend(), insert()
 Removing Elements: remove(), pop()
 Accessing Elements: Indexing, slicing
 Sorting: sort(), sorted()
 
-#### Tuple Operations
+### Tuple Operations
 Accessing Elements: Indexing, slicing
 Concatenation: +
 Repetition: *
-#### Dictionary Operations
+### Dictionary Operations
 Adding/Updating Elements: dict[key] = value
 Removing Elements: del dict[key], pop()
 Accessing Elements: dict.get(key)
 Iteration: dict.items(), dict.keys(), dict.values()
 ### Mutable and Immutable Data Structures
-#### Mutable Data Structures
+### Mutable Data Structures
 Lists: Can be changed after creation.
 Dictionaries: Can have their content modified.
-#### Immutable Data Structures
+### Immutable Data Structures
 Tuples: Cannot be changed after creation.
 Areas of Usage
 Lists
